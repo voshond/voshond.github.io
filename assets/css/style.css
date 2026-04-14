@@ -135,10 +135,13 @@ main {
 }
 
 .post-content blockquote {
-  border-left: 2px solid #ddd;
-  padding-left: 1.2em;
-  color: #555;
-  margin: 1.4em 0;
+  margin: 2em 0;
+  padding: 0 1.4em;
+  border-left: 3px solid #111;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
 }
 
 .post-content code {
