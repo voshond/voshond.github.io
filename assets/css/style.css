@@ -107,6 +107,14 @@ main {
   pointer-events: none;
 }
 
+.post-list li:hover .post-read {
+  color: #111;
+}
+
+.post-list li:hover .post-read .btn-label {
+  text-decoration-color: #111;
+}
+
 /* Post */
 
 .post-header {
