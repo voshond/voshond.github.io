@@ -108,6 +108,7 @@ main {
   font-size: 0.8rem;
   color: #999;
   pointer-events: none;
+  text-decoration: underline
 }
 
 .post-list li:hover .post-read {
