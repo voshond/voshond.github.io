@@ -80,6 +80,13 @@ main {
   color: #555;
 }
 
+.post-excerpt {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
 /* Post */
 
 .post-header {
@@ -138,10 +145,13 @@ main {
   margin: 2em 0;
   padding: 0 1.4em;
   border-left: 3px solid #111;
-  font-size: 1.05rem;
-  font-style: italic;
   color: #333;
   line-height: 1.6;
+}
+
+.post-content blockquote p {
+  font-size: 1.05rem;
+  font-style: italic;
 }
 
 .post-content code {
