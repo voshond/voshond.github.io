@@ -103,16 +103,8 @@ main {
 }
 
 .post-read {
-  display: inline-block;
   margin-top: 10px;
-  font-size: 0.8rem;
-  color: #999;
   pointer-events: none;
-  text-decoration: underline
-}
-
-.post-list li:hover .post-read {
-  color: #555;
 }
 
 /* Post */
@@ -203,18 +195,46 @@ main {
   padding: 0;
 }
 
+/* Link button component
+   Usage: <a href="#" class="btn">
+            <span aria-hidden="true">←</span>
+            <span class="btn-label">Link text</span>
+          </a>
+   Icon can go left or right — only .btn-label gets underlined. */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.85rem;
+  transition: color 0.15s;
+}
+
+.btn .btn-label {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #ccc;
+  transition: text-decoration-color 0.15s;
+}
+
+.btn:hover {
+  color: #111;
+}
+
+.btn:hover .btn-label {
+  text-decoration-color: #111;
+}
+
+.btn-muted {
+  color: #999;
+}
+
 /* Back link */
 
 .back-link {
-  display: inline-block;
   margin-top: 48px;
-  font-size: 0.85rem;
-  color: #999;
-  text-decoration: none;
-}
-
-.back-link:hover {
-  color: #111;
 }
 
 /* Footer */
@@ -237,9 +257,4 @@ footer {
 
 .footer-links a {
   color: #999;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: #111;
 }

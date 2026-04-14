@@ -7,7 +7,7 @@ layout: default
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
     <a href="{{ post.url }}" class="post-link">{{ post.title }}</a>
     <p class="post-excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html | truncatewords: 30 }}{% endif %}</p>
-    <span class="post-read" aria-hidden="true">Read →</span>
+    <span class="post-read btn btn-muted"><span class="btn-label">Read</span><span aria-hidden="true">→</span></span>
   </li>
   {% endfor %}
 </ul>
