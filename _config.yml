@@ -1,0 +1,13 @@
+title: voshond
+description: Personal site
+url: "https://voshond.github.io"
+
+author:
+  name: Martin Herrmann
+  email: martin.k.herrmann@me.com
+  github: voshond
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
